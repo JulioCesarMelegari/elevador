@@ -1,5 +1,6 @@
-
 /*CSS Gerais*/
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 *{
     box-sizing: border-box;
@@ -10,9 +11,52 @@ body {
     display: flex;
     flex-direction: column;
     background-color: black;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+}
+
+.calcada {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 1;
 }
 
 /*CSS Controles*/
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    background-color: #222;
+    padding: 10px;
+}
+
+.controles .mostrador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22f522;
+    border: 10px solid #666;
+    height: 100%;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 2.5rem;
+}
+
+.controles button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 6px solid #999;
+}
+
+.controles button.destaque {
+    border-color: yellow;
+}
 
 /*CSS Rua*/
 
@@ -20,12 +64,36 @@ body {
     display: flex;
     align-items: center;
     height: 100px;
-    background-color: gray;
+    background-color: #777;
     gap: 30px;
+    border-top: 10px solid white;
 }
 
 .rua > .faixa {
     flex: 1;
     height: 10px;
     background-color: #DDD;
+}
+
+/*CSS Arvore*/
+
+.arvore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arvore::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.arvore::after{
+    content: "";
+    width: 20px;
+    height: 100px;
+    background-color: #4d3131;
 }
