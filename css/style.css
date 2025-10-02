@@ -32,6 +32,7 @@ body {
     height: 100px;
     background-color: #222;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .controles .mostrador {
@@ -96,4 +97,90 @@ body {
     width: 20px;
     height: 100px;
     background-color: #4d3131;
+}
+
+/*CSS Arvore*/
+
+.predio {
+    display: flex;
+    width: 500px;
+    height: 100%;
+    background-color: #319DA0;
+    gap: 10px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    background-color: #0006;
+    flex: 2;
+}
+
+.poco {
+    display: flex;
+    background-color: #fff9;
+    flex: 1;
+}
+
+.andar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex:1;
+    border-bottom: 2px solid white;
+}
+
+.porta {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    width: 40%;
+    height: 80%;
+    background-color: brown;
+    border: solid 5px #FFF6;
+    border-bottom-width: 0;
+}
+
+.porta::after {
+    content: "";
+    width: 30%;
+    height: 15%;
+    border-radius: 5px;
+    background-color: #fff9;
+}
+
+.terreo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.janela {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #FFFC;
+    background-color: #068888;
+    height: 50%;
+    width: 40%;
+}
+
+.janela::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    top: 0;
+    height: 100%;
+    width: 1px;
+}
+
+.janela::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    left: 0;
+    width: 100%;
+    height: 1px;
 }
